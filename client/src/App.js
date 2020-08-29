@@ -265,10 +265,10 @@ class App extends Component{
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Change the NAME</h5>
+                <h5 class="card-title">Make Vertical Shift</h5>
              <div className="input-group mb-2">
               <div className="input-group-prepend">
-                <div className="input-group-text">Make Vertical Shift</div>
+                <div className="input-group-text">CoOrdinate_Y</div>
               </div>
               <input
                 type="text"
