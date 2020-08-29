@@ -1,0 +1,63 @@
+{
+    "compile_config": {
+        "contract_name": "demo.py",
+        "class_name": "Cryptobot(manager_address = sp.address('tz1NN5QooJWkW44KFfrXqLRaxEa5Wxw3f9FF'), life_state=True)"
+    },
+    "test_config": {
+        "contract_name": "demo.py",
+        "test_name": "Ending"
+    },
+    "deploy_config": {
+        "node": "https://carthagenet.smartpy.io/",
+        "contract_code": "demo_compiled.tz",
+        "contract_storage": "demo_storage_init.tz",
+        "key": "test_key1",
+        "amount": 1,
+        "delegate_address": "",
+        "fee": 100000,
+        "derivation_path": "",
+        "storage_limit": 10000,
+        "gas_limit": 500000
+    },
+    "contract_interaction_config": {
+        "node": "https://carthagenet.smartpy.io/",
+        "api-key": "378cc68d-087d-4b61-b70f-cbf660536f3b"
+    }
+}
+
+// Contract Address : KT1DsT31zAR27hVx2T4oWRFhipXnuuSDPiDM 
+
+
+//  ---------------
+//  Entry Points :
+//  ---------------
+
+//  Params :  { name: undefined, type: 'string' }
+//  Name : change_name 
+//  Structure : (Left (Left $PARAM)) 
+//  Sample Invocation : (Left (Left "Tacos"))
+
+// ----------------
+
+//  Params :  { name: undefined, type: 'int' }
+//  Name : move_horizontally 
+//  Structure : (Left (Right $PARAM)) 
+//  Sample Invocation : (Left (Right -1))
+
+// ----------------
+
+//  Params :  { name: undefined, type: 'nat' }
+//  Name : move_vertically 
+//  Structure : (Right (Left $PARAM)) 
+//  Sample Invocation : (Right (Left 99))
+
+// ----------------
+
+//  Params :  { name: undefined, type: 'string' }
+//  Name : shoot_alien 
+//  Structure : (Right (Right $PARAM)) 
+//  Sample Invocation : (Right (Right "Tacos"))
+
+// ----------------
+
+
