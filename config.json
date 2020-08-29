@@ -25,39 +25,5 @@
     }
 }
 
-// Contract Address : KT1DsT31zAR27hVx2T4oWRFhipXnuuSDPiDM 
-// https://carthagenet.tzstats.com/KT1DsT31zAR27hVx2T4oWRFhipXnuuSDPiDM
-
-//  ---------------
-//  Entry Points :
-//  ---------------
-
-//  Params :  { name: undefined, type: 'string' }
-//  Name : change_name 
-//  Structure : (Left (Left $PARAM)) 
-//  Sample Invocation : (Left (Left "Tacos"))
-
-// ----------------
-
-//  Params :  { name: undefined, type: 'int' }
-//  Name : move_horizontally 
-//  Structure : (Left (Right $PARAM)) 
-//  Sample Invocation : (Left (Right -1))
-
-// ----------------
-
-//  Params :  { name: undefined, type: 'nat' }
-//  Name : move_vertically 
-//  Structure : (Right (Left $PARAM)) 
-//  Sample Invocation : (Right (Left 99))
-
-// ----------------
-
-//  Params :  { name: undefined, type: 'string' }
-//  Name : shoot_alien 
-//  Structure : (Right (Right $PARAM)) 
-//  Sample Invocation : (Right (Right "Tacos"))
-
-// ----------------
 
 
