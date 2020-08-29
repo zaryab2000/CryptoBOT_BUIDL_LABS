@@ -61,7 +61,6 @@ class App extends Component{
 
   async nameChanger(){
 
-    console.log(this.state.newName)
      var keystore = key,
       amount = 1,
       fee = 100000,
@@ -93,7 +92,6 @@ class App extends Component{
 
    async shiftHorizontal(){
 
-    console.log(this.state.horizontalShift)
      var keystore = key,
       amount = 1,
       fee = 100000,
@@ -125,7 +123,6 @@ class App extends Component{
 
     async shiftVertical(){
 
-    console.log(this.state.verticalShift)
      var keystore = key,
       amount = 1,
       fee = 100000,
@@ -157,7 +154,6 @@ class App extends Component{
 
    async startShoot(){
 
-    console.log(this.state.alienName)
      var keystore = key,
       amount = 1,
       fee = 100000,
@@ -200,7 +196,7 @@ class App extends Component{
         <br />
         <p>Wallet Address Detected : {this.state.wallet}</p>
         <br />
-        <p> Latest Operation Group ID : {this.state.transaction_receipt}</p>
+        <p> Latest Transaction Receipt : {this.state.transaction_receipt}</p>
 
         <div class="row">
           <div class="col-sm-6">
@@ -227,7 +223,7 @@ class App extends Component{
               type="submit"
               className="btn btn-primary mb-2"
               onClick={this.nameChanger}
-            >Change
+            >Change Name
             </button>
           </div>
                 </div>
@@ -256,7 +252,7 @@ class App extends Component{
               type="submit"
               className="btn btn-primary mb-2"
               onClick={this.shiftHorizontal}
-            >Change
+            >Horizonal Move
             </button>
           </div>
 
@@ -290,7 +286,7 @@ class App extends Component{
               type="submit"
               className="btn btn-primary mb-2"
               onClick={this.shiftVertical}
-            >Change
+            >Vertical MOVE
             </button>
           </div>
                 </div>
@@ -309,7 +305,7 @@ class App extends Component{
                 className="form-control"
                 id="horizontalShift"
                 name="horizontalShift"
-                placeholder="Enter X"
+                placeholder="Enter Name"
                 value={this.state.alienName}
                 onChange={this.handleShoot}
               />
@@ -319,7 +315,7 @@ class App extends Component{
               type="submit"
               className="btn btn-primary mb-2"
               onClick={this.startShoot}
-            >Change
+            >ShOOT
             </button>
           </div>
 
