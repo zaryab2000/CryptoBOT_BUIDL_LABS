@@ -17,14 +17,14 @@ class App extends Component{
       wallet: key.publicKeyHash,
       address: "",
       newName: "",
-      horizonalShift: "",
+      horizontalShift: 0,
       transaction_receipt: "",
     };
 
     this.nameChanger = this.nameChanger.bind(this);
     this.handleNameChanger = this.handleNameChanger.bind(this);
     this.shiftHorizontal = this.shiftHorizontal.bind(this);
-    this.handleHorizontalShift = this.handleHorizonalShift.bind(this);
+    this.handleHorizontalShift = this.handleHorizontalShift.bind(this);
   }
 
   handleNameChanger = (event) =>{
@@ -35,7 +35,7 @@ class App extends Component{
 
   handleHorizontalShift = (event) =>{
     this.setState({
-      horizonalShift : event.target.value,
+      horizontalShift : event.target.value,
     })
   }
 
@@ -73,14 +73,14 @@ class App extends Component{
 
    async shiftHorizontal(){
 
-    console.log(this.state.horizonalShift)
+    console.log(this.state.horizontalShift)
      var keystore = key,
       amount = 1,
       fee = 100000,
       storage_limit = 1000,
       gas_limit = 200000,
       entry_point = undefined,
-      parameters = `(Left (Right "${this.state.horizonalShift}"))`,
+      parameters = `(Left (Right ${this.state.horizontalShift}))`,
       derivation_path = "";
 
       const result = await TezosNodeWriter.sendContractInvocationOperation(
@@ -161,10 +161,10 @@ class App extends Component{
               <input
                 type="text"
                 className="form-control"
-                id="horizonalShift"
-                name="horizonalShift"
+                id="horizontalShift"
+                name="horizontalShift"
                 placeholder="Enter X"
-                value={this.state.horizonalShift}
+                value={this.state.horizontalShift}
                 onChange={this.handleHorizontalShift}
               />
             </div>
