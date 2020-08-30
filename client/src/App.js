@@ -62,7 +62,6 @@ class App extends Component{
   async nameChanger(){
 
      var keystore = key,
-      amount = 1,
       fee = 100000,
       storage_limit = 1000,
       gas_limit = 200000,
@@ -74,7 +73,7 @@ class App extends Component{
       tezosNode,
       keystore,
       contractAddress,
-      amount,
+      0,
       fee,
       derivation_path,
       storage_limit,
@@ -93,7 +92,6 @@ class App extends Component{
    async shiftHorizontal(){
 
      var keystore = key,
-      amount = 1,
       fee = 100000,
       storage_limit = 1000,
       gas_limit = 200000,
@@ -105,7 +103,7 @@ class App extends Component{
       tezosNode,
       keystore,
       contractAddress,
-      amount,
+      0,
       fee,
       derivation_path,
       storage_limit,
@@ -124,7 +122,6 @@ class App extends Component{
     async shiftVertical(){
 
      var keystore = key,
-      amount = 1,
       fee = 100000,
       storage_limit = 1000,
       gas_limit = 200000,
@@ -136,7 +133,7 @@ class App extends Component{
       tezosNode,
       keystore,
       contractAddress,
-      amount,
+      0,
       fee,
       derivation_path,
       storage_limit,
@@ -155,7 +152,6 @@ class App extends Component{
    async startShoot(){
 
      var keystore = key,
-      amount = 1,
       fee = 100000,
       storage_limit = 1000,
       gas_limit = 200000,
@@ -167,7 +163,7 @@ class App extends Component{
       tezosNode,
       keystore,
       contractAddress,
-      amount,
+      0,
       fee,
       derivation_path,
       storage_limit,

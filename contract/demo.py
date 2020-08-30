@@ -88,3 +88,5 @@ def test():
     scenario += test_bot.shoot_alien("simple_alien").run(sender = my_address)
     
     scenario += test_bot.shoot_alien("boss_alien").run(sender = my_address)
+
+
